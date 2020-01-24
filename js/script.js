@@ -2,7 +2,7 @@ $(document).ready(function() {
     $(".slider-f").slick({
         dots: true,
         arrows: true,
-        autoplay: true,
+        autoplay: false,
         responsive: [
           {
             breakpoint: 720,

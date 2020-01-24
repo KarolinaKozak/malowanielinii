@@ -157,11 +157,17 @@ ul {
 }
 .slick-dots li button::before {
   content: "";
+  position: absolute;
   background: transparent;
   border: 1px solid #e5e5e5;
   height: 13px;
   width: 13px;
   opacity: 1;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  top: 2px;
+  
 }
 .slick-dots li.slick-active button::before {
   background: #ffcb05;
@@ -207,6 +213,7 @@ h2, .h2 {
   text-transform: uppercase;
   text-align: center;
   position: relative;
+  margin-bottom: 88px;
 }
 .h2 span {
   color: #ffcb05
@@ -214,13 +221,30 @@ h2, .h2 {
 h2::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -13px;
+  background: #aa8a13;
+  height: 2px;
+  width: 100px;
+  text-align: center;
   left: 0;
   right: 0;
+  margin: 0 auto;
 }
 .why-we-description {
   font-size: 20px;
   font-weight: 600;
+}
+.img-container {
+  position: relative;
+  height: 102px;
+}
+.img-container img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 
@@ -265,7 +289,7 @@ h2::after {
 }
 
 @media only screen and (max-width: 600px) {
-=
+
 }
 
 @-webkit-keyframes start {
