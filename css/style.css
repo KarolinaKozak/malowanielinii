@@ -44,30 +44,28 @@ ul {
 .top-contact {
   display: flex;
   justify-content: space-between;
-  position: relative;
-  left: 28px;
+
 }
 .top-contact-item {
   position: relative;
-  min-width: 168px;
-  margin-left: 50px;
+  margin-left: 100px;
   transition: all 0.2s ease;
 }
+.top-contact-item-img,
 .top-contact-item-hover {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -54px;
   bottom: 0;
-  right: 0;
   opacity: 0;
+}
+.top-contact-item-img {
+  opacity: 1;
 }
 .top-contact-item:hover .top-contact-item-hover {
   opacity: 1;
 }
 .top-contact-item-description {
-  position: relative;
-  bottom: 48px;
-  left: 58px;
   color: #fff;
   line-height: 24px;
 }
@@ -151,9 +149,11 @@ ul {
 .button:hover {
   border-color: #ffcb05;
 }
+.slick-dotted.slick-slider {
+  margin: 0;
+}
 .slick-dots {
   bottom: 44px;
-
 }
 .slick-dots li button::before {
   content: "";
@@ -206,9 +206,21 @@ h2, .h2 {
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
+  position: relative;
 }
 .h2 span {
   color: #ffcb05
+}
+h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.why-we-description {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 
