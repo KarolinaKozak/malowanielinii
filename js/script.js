@@ -2,7 +2,7 @@ $(document).ready(function() {
     $(".slider-f").slick({
         dots: true,
         arrows: true,
-        autoplay: false,
+        autoplay: true,
         responsive: [
           {
             breakpoint: 720,
@@ -13,19 +13,20 @@ $(document).ready(function() {
 
     });
 
-  //   $(".slider2").slick({
-  //     dots: false,
-  //     autoplay: true,
-  //     arrows: true,
-  //     responsive: [
-  //       {
-  //         breakpoint: 720,
-  //         settings: {
-  //           arrows: false
-  //         }
-  //       }]
+    $(".slider-2").slick({
+      dots: false,
+      autoplay: true,
+      arrows: true,
+      slidesToShow: 6,
+      responsive: [
+        {
+          breakpoint: 720,
+          settings: {
+            arrows: false
+          }
+        }]
 
-  // });
+  });
 
 
 
