@@ -5,9 +5,10 @@ $(document).ready(function() {
         autoplay: true,
         responsive: [
           {
-            breakpoint: 720,
+            breakpoint: 500,
             settings: {
-              dots: false
+              dots: false,
+              arrows: false
             }
           }]
 
@@ -20,9 +21,10 @@ $(document).ready(function() {
       slidesToShow: 6,
       responsive: [
         {
-          breakpoint: 720,
+          breakpoint: 1100,
           settings: {
-            arrows: false
+            arrows: false,
+            slidesToShow: 2
           }
         }]
 

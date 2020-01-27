@@ -120,6 +120,10 @@ ul {
 .single-slide {
   padding-top: 136px;
   padding-bottom: 174px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 719px;
 }
 .slide-content {
   color: #fff;
@@ -180,6 +184,9 @@ ul {
   width: 14px;
 
   
+}
+.slick-dots li button::before {
+  content: "";
 }
 .slick-dots li.slick-active button::before {
   content: "";
@@ -289,6 +296,13 @@ ul {
 .our-offer .h2 {
   color: #000;
 }
+.trusted-us .h2 {
+  margin-bottom: 60px;
+}
+.contact .h2,
+.trusted-us .h2 {
+  text-transform: none;
+}
 .trusted-us .h2::after,
 .our-offer .h2::after {
   background: #f9da63;
@@ -346,6 +360,10 @@ display: block;
   padding-top: 54px;
   padding-bottom: 30px;
 }
+.slider-2 .slick-slide img {
+  text-align: center;
+  display: inline-block;
+}
 .slider-2 .slick-next::before,
 .slider-2 .slick-prev::before {
   display: none;
@@ -372,40 +390,221 @@ display: block;
   background: url("../images/arrow.png") center center no-repeat;
   opacity: 1;
 }
+.trusted-us .button {
+  color: #000;
+  border-color: #000;
+  margin-top: 1.5rem;
+  padding: 14px 56px;
+  transition: all 0.2s ease;
+}
+.trusted-us .button:hover {
+  border-color: #ffcb05;
+  color: #ffcb05;
+}
+.contact {
+  background: #222221;
+  padding-top: 2rem;
+  padding-bottom: 116px;
+}
+.contact .h2 {
+  color: #ffcb05;
+}
+.contact-icon i {
+  font-size: 40px;
+  color: #ffcb05;
+  transition: color 0.2s ease;
+}
+.contact-icon-description {
+  display: block;
+  font-size: 20px;
+  color: #b3b3b3;
+  line-height: 27px;
+  transition: color 0.2s ease;
+  padding-top: 26px;
+}
+.contact a:hover i {
+  color: #f8de7c;
+}
+.contact a:hover .contact-icon-description {
+  color: #fff;
+}
+.footer-hr {
+  margin: 0;
+  background: #ffcb05;
+  height: 5px;
+}
+.footer {
+  background: #000;
+  padding: 2rem 0;
+}
+.logo-footer {
+  padding-bottom: 1.5rem;
+}
+.footer-p-container p {
+  font-size: 18px;
+  color: #fff;
+  line-height: 30px;
+  margin-bottom: 2rem;
+}
+.h5 {
+  color: #ffcb05;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.shortcuts ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #616161;
+  max-width: 176px;
+}
+.shortcuts ul li:last-child {
+  border: none;
+}
+.shortcuts ul li a {
+  color: #a2a2a2;
+  font-size: 18px;
+  font-weight: 500;
+}
+.social {
+  height: 47px;
+  margin-top: 42px;
+}
+.social a {
+  position: relative;
+  padding-right: 47px;
+  margin-right: 6px;
+}
+.social img {
+  display: inline-block;
 
+}
+.social-img,
+.social-hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  margin: auto;
+  transition: opacity 0.2s ease;
+}
+.social-img {
+  opacity: 1;
+}
+.social a:hover .social-hover {
+  opacity: 1;
+}
+.h6 {
+  font-size: 17px;
+  white-space: nowrap;
+  color: #fff;
+}
+.footer-end {
+  background: #ffcb05;
+  padding: 12px 0;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 1400px) {
-  
+}
+.df {
+  display: flex;
+  justify-content: space-between;
+}
+.df span {
+  font-size: 13px;
+  line-height: 44px;
+  font-weight: 500;
 }
 
-@media only screen and (max-width: 1200px) {
 
+
+
+
+
+@media only screen and (max-width: 1230px) {
+  .h6 {
+    white-space: normal;
+  }
+  .slide-content {
+    margin: 0 32px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
-  
-}
+  .trapezes {
+    margin-top: 1rem;
+  }
+  .top {
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+  .top-contact {
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+    left: 0.5rem;
+    margin: 0 auto;
 
-@media only screen and (max-width: 800px) {
-  
+  }
+  .why-we .col {
+    min-width: 250px;
+    margin-bottom: 1rem;
+  }
+  .navbar-brand {
+    margin-top: 2rem;
+
+  }
+  .navbar .navbar-nav li:first-child .nav-link {
+    padding-left: 1rem;
+  }
+
 }
 
 @media only screen and (max-width: 767px) {
+ .contact .col-12 {
+   margin-bottom: 2rem;
+ } 
+}
+
+@media only screen and (max-width: 650px) {
+    .top-contact-item img {
+      display: none;
+    }
+    .top-contact-item {
+      margin-left: 1rem;
+    }
+    .single-slide {
+      padding-top: 2rem;
+      padding-bottom: 4rem;
+    }
+    .slider-subtitle {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+    .slider-title {
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+    .slider-text {
+      font-size: 18px;
+    }
+    .slider .button {
+      margin-top: 1rem;
+    }
+    .df {
+      display: block;
+    }
+    .df span {
+      display: block;
+      font-size: 11px;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+  .top-contact-item-description {
+    font-size: 13px;
+  }
 
 }
 @media only screen and (max-width: 700px) {
